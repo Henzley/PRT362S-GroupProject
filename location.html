@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Locations - Slice of Life Pizza</title>
+    <link rel="stylesheet" href="home2.css" />
+
+    <style>
+
+
+        main {
+            padding: 2rem;
+            max-width: 1300px;
+            height:600px ;
+            margin: 2rem auto;
+            background-color: orange;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: floralwhite;
+            margin-bottom: 1rem;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .map-container {
+            margin: 2rem auto 0;
+            width: 100%;
+            height: 450px;
+            max-width: 1100px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            background-color: ghostwhite;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+
+<header class="header">
+
+    <div class="container">
+        <div class="logo">
+            <img src="pic/Logo2.1.jpg" alt="Slice of Life Logo" class="logo-image" />
+            <div class="logo-text">
+                <h1>Slice of Life</h1>
+                <p class="tagline">Family owned since 1995</p>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="info.php">Profile</a></li>
+                    <li><a href="logOut.php">Log Out</a></li>
+                    <li><a href="location.html" class="active">Location</a></li>
+                    <li><a href="menu.php" class="order-btn">Order Online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="locations">
+
+    <div class="container">
+        <h2 class="section-title">Find Us</h2>
+        <p class="locations-p">We have multiple locations across Cape Town and the Western Cape. Find the one nearest to you!</p>
+
+        <div class="locations-grid">
+
+            <div class="location-card">
+                <h3>Sea Point</h3>
+                <p>123 Main Road<br />Sea Point, Cape Town</p>
+                <p>Open daily: 11am - 10pm</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=123+Main+Road,+Sea+Point,+Cape+Town"
+                   target="_blank"
+                   class="btn small-btn">Directions</a>
+            </div>
+
+            <div class="location-card">
+                <h3>Gardens</h3>
+                <p>45 Kloof Street<br />Gardens, Cape Town</p>
+                <p>Open daily: 11am - 11pm</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=45+Kloof+Street,+Gardens,+Cape+Town"
+                   target="_blank"
+                   class="btn small-btn">Directions</a>
+            </div>
+
+            <div class="location-card">
+                <h3>Woodstock</h3>
+                <p>78 Albert Road<br />Woodstock, Cape Town</p>
+                <p>Open daily: 11am - 10pm</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=78+Albert+Road,+Woodstock,+Cape+Town"
+                   target="_blank"
+                   class="btn small-btn">Directions</a>
+            </div>
+
+
+            <div class="location-card coming-soon">
+                <h3>Stellenbosch</h3>
+                <p>Coming Soon!</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main>
+    <h2>Locations</h2>
+
+    <!-- Google Map embed -->
+    <div class="map-container">
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019293598982!2d-122.41941548468126!3d37.7749292797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d69e82a7%3A0xc8a9ee021ebd6b0!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sza!4v1695373837431!5m2!1sen!2sza"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+</main>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-sections">
+
+            <div class="footer-section">
+
+                <h3>Slice of Life</h3>
+                <p>Family-owned pizza with a tradition of excellence since 1995.</p>
+
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📸</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="location.html">Locations</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@sliceoflife.co.za</p>
+                <p>Phone: 021 555 0123</p>
+                <p>Head Office: 123 Main Road, Sea Point, Cape Town</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <p>Monday - Thursday: 11am - 10pm</p>
+                <p>Friday - Saturday: 11am - 11pm</p>
+                <p>Sunday: 12pm - 9pm</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Slice of Life Pizzeria. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
